@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFF;
+        }
+
+        header {
+            background-color: #000;
+            color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #FFD700;
+            padding: 15px;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #FFD700;
+            color: #000;
+			border-radius: 15px;
+        }
+
+        .hero {
+            background-image: url(image/background.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+			background-color: black;
+			padding: 5px 40;
+			margin: 0 500px;
+			border: 2px solid #FFD700;
+            border-radius: 25px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+			border: 2px solid #FFD700;
+            border-radius: 15px;
+			background-color: black;
+			margin: 0 200px
+			
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #000;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color:#000;
+            color: #FFD700;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .grid-item {
+            background-color: #333;
+            padding: 0px;
+            border-radius: 10px;
+            flex: -1.5;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			color: white;
+			text-decoration: none;
+        }
+		
+		 
+
+        .grid-item h4 {
+            font-size: 1.7em;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+		
+		.grid-item h4:hover {
+            color: white;  
+        }
+
+        footer {
+            background-color: #000;
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gaming&Co</h1>
+        <p>Le meilleur du gaming à portée de clic</p>
+    </header>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="Recrutement.html">Recrutements</a>
+        <a href="nouveauté.html">Videos</a>
+        <a href="lives.html">Lives</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+
+    <section class="hero">
+	<br/><br/>
+        <h2>Vivez l'ultime expérience gaming</h2>
+		<br/><br/><br/>
+        <p>Plongez dans l'univers du gaming avec Gaming&Co. Découvrez les jeux les plus récents, des événements exclusifs et plus encore.</p>
+        <br/><br/><br/><br/><br/>
+		 
+    </section>
+
+    <section class="section">
+	 <a href="https://www.youtube.com/channel/UCPQAHDQGTqoZVP7gQH7MI2Q" class="cta-button">Commencez à nous suivre</a>
+        <h3>Nos catégories</h3>
+        <div class="grid">	
+            <div class="grid-item">
+                <a href="file:///E:/Chaine%20Youtube/Site%20internet/D%C3%A9fi.html"><h4>Défis</h4></a>
+                <strong><p>Découvrez les futures objectifs de notre chaîne.</p></strong>
+            </div>
+			
+            <div class="grid-item">
+			<a href="file:///E:/Chaine%20Youtube/Site%20internet/Clips.html"><h4>Clips</h4></a>
+                <p><strong>Le meilleur des clips de la semaine aparait ici.</strong></p>
+            </div>
+			
+			<div class="grid-item">
+             <a href="file:///E:/Chaine%20Youtube/Site%20internet/Tarifs.html"><h4>Coaching</h4></a>
+                <p><strong>Faites vous coacher pas Atomm France, dans un programme personnalisé basé sur Fortnite</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gaming&Co. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
