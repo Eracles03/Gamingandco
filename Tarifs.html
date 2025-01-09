@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs</title>
+    <style>
+	 nav {
+            display: flex;
+            justify-content: center;
+            background-color:  #121212;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color:  #FFD700 ;
+            padding: 15px;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color:  #FFD700 ;
+            color: #000;
+			border-radius: 15px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:  #000 ;
+            text-align: center;
+            padding: 20px 0;
+        }
+		
+		header p {
+		color: #FFD700;
+		}
+		
+		
+        header h1 {
+            color: #FFD700;
+            font-size: 3em;
+        }
+        nav {
+            background-color: #222222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            background-color:  #FFD700 ;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+		
+		section h2 {
+		color: #FFD700;
+		}
+		
+        .tarifs-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .tarifs-table th, .tarifs-table td {
+            padding: 15px;
+            border: 1px solid #444;
+        }
+        .tarifs-table th {
+            background-color:  #FFD700 ;
+            color: black;
+        }
+        .tarifs-table td {
+            background-color: #333;
+        }
+		
+        footer {
+            background-color: #000;
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+			position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+		
+		.form-container {
+            background-color: #333;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: white;
+            font-size: 16px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #e6b800;
+			
+		.p1 {
+		color: #FFD700;
+		}
+		
+			
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gaming&co</h1>
+        <p>Le meilleur du gaming à portée de clic</p>
+    </header>
+
+    <nav>
+       <a href="Index.html">Accueil</a>
+        <a href="Recrutement.html">Recrutements</a>
+        <a href="Nouveauté.html">Videos</a>
+        <a href="Lives.html">Lives</a>
+        <a href="contact copie.html">Contacts</a>
+    </nav>
+
+    <section>
+        <h2>Nos Tarifs</h2>
+        <p1>Découvrez tous les tarifs en fonctions des horaires pour nos propositions de coaching personalisée !!!!</p1>
+		<br/><br/>
+		<strong><p1>remplissez le formulaire, nous vous réponderons via mail pour organiser la date et l'heure du coaching</p1><strong/>
+
+        <table class="tarifs-table">
+            <thead>
+                <tr>
+                    <th>Offre</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>30 Minutes</td>
+                    <td>30 Minutes de coaching avec Atomm France : </td>
+                    <td>20€</td>
+                </tr>
+                <tr>
+                    <td>1 heure</td>
+                    <td> 1 heure de coaching avec Atomm France :</td>
+                    <td>35€</td>
+                </tr>
+                <tr>
+                    <td>1 heure 30</td>
+                    <td>1 heure 30 de coaching avec Atomm France :</td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td>2 Heure</td>
+                    <td>2 heure de coaching avec Atomm France :</td>
+                    <td>75€</td>
+                </tr>
+				<tr>
+                    <td>personalisé</td>
+                    <td>Donnez nous votre horaire personalisé dans le formulaire, et nous vous retournerons le tarif par mail pour cet horaire spécifique : </td>
+                    <td>réponse par mail</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+	
+	<section>
+	 
+        <div class="form-container">
+            <h2>Formulaire de Candidature</h2>
+            <form action="https://formspree.io/f/mzzbnbdw" method="POST">
+                <label for="name"><strong>Nom complet</strong></label>
+				</br></br>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"><strong>Adresse email</strong></label>
+				</br></br>
+                <input type="email" id="email" name="email" required>
+
+                <label for="platform"><strong>A quelle option voulez vous souscrire ?</strong></label>
+                <select id="platform" name="platform" required>
+                    <option value="30 Minutes">30 Minutes</option>
+                    <option value="1 heure ">1 heure </option>
+                    <option value="1 heure 30 Minutes">1 heure 30 Minutes</option>
+					<option value="2 heure ">2 heure</option>
+					<option value="personalisée">horaire personalisée</option>
+                </select>
+
+                <label for="experience"></label>
+				</br></br>
+                <textarea id="experience" name="experience" rows="4" placeholder="Mettez ici un petit résumé de votre niveau actuel, et dans quoi vous souhaiteriez progresser..." required></textarea>
+
+                <input type="submit" value="Souscrire maintenant">
+            </form>
+        </div>
+				
+		</section>
+
+    <footer>
+        <p>&copy; 2024 Gaming&co. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
