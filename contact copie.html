@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFF;
+        }
+
+        header {
+            background-color: #000;
+            color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #FFD700;
+            padding: 15px;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #FFD700;
+            color: #000;
+			border-radius: 15px;
+        }
+
+        
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #000;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #000;
+            color: #FFD700;
+        }
+
+        
+
+        .section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+      
+
+        .grid-item h4 {
+            font-size: 1.8em;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+       
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		  /* Règles globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Fond noir pour la page */
+            color: #fff; /* Texte blanc pour contraster avec le fond noir */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        h1, h2 {
+            color: #ffcc00; /* Jaune vif pour les titres */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* Centrer le contenu de la page */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Conteneur du formulaire de contact */
+        .contact-container {
+            background-color: #333; /* Fond gris foncé pour contraster avec le noir */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 1.2rem;
+            color: #ddd; /* Gris clair pour le texte descriptif */
+            margin-bottom: 20px;
+        }
+
+        /* Formulaire */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: #ffcc00; /* Jaune pour les labels */
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffcc00;
+            border-radius: 5px;
+            background-color: #444; /* Fond gris foncé pour les champs */
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #ffcc00; /* Jaune pour le bouton de soumission */
+            color: #000;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e6b800; /* Jaune plus foncé au survol */
+        }
+
+        /* Section des réseaux sociaux */
+        .social-links {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #ffcc00; /* Jaune pour les liens sociaux */
+        }
+
+        .social-links a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff; /* Changer la couleur au survol */
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000; /* Fond noir pour le pied de page */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Media Queries pour responsivité */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            label {
+                font-size: 1rem;
+            }
+
+            input, textarea {
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1rem;
+            }
+
+            .social-links {
+                font-size: 1rem;
+            }
+        }
+		
+		
+    </style>
+</head>
+
+<body>
+
+    
+	 <header>
+        <h1>Gaming&Co</h1>
+        <p>Le meilleur du gaming à portée de clic</p>
+    </header>
+
+    <nav>
+        <a href="file:///E:/Chaine%20Youtube/Site%20internet/Index%20-%20Copie.html#">Accueil</a>
+        <a href="file:///E:/Chaine%20Youtube/Site%20internet/Recrutement.html">Recrutements</a>
+        <a href="file:///E:/Chaine%20Youtube/Site%20internet/Nouveaut%C3%A9s/Nouveaut%C3%A9.html">Videos</a>
+        <a href="file:///E:/Chaine%20Youtube/Site%20internet/Lives.html">Lives</a>
+        <a href="#">Contacts</a>
+    </nav>
+	
+	 
+
+    <main>
+        <section class="contact-container">
+            <h2>Formulaire de contact</h2>
+            <p>Remplissez ce formulaire et nous reviendrons vers vous dans les plus brefs délais.</p>
+            
+            <!-- Formulaire de contact -->
+            <form action="https://formspree.io/f/xjkvdwpo" method="POST">
+                <label for="name">Votre nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">Votre email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="4" required></textarea>
+
+                <input type="submit" value="Envoyer le message">
+            </form>
+
+            <!-- Section des réseaux sociaux -->
+            <div class="social-links">
+                <p>Suivez-nous sur :</p>
+                <a href="https://www.tiktok.com/@gaming.co_officiel" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/gaming_co_officiel/" target="_blank">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gaming&co | Tous droits réservés</p>
+    </footer>
+
+   
+
+    
+
+</body>
+
+</html>
