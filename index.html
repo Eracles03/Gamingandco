@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Accueil</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,21 +31,22 @@
             justify-content: center;
             background-color: #333;
             padding: 10px;
+            flex-wrap: wrap;
         }
 
         nav a {
             text-decoration: none;
             color: #FFD700;
-            padding: 15px;
-            margin: 0 20px;
+            padding: 10px;
+            margin: 5px;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
         nav a:hover {
             background-color: #FFD700;
             color: #000;
-			border-radius: 15px;
+            border-radius: 15px;
         }
 
         .hero {
@@ -58,90 +59,87 @@
         }
 
         .hero h2 {
-            font-size: 3em;
+            font-size: 2em;
             margin-bottom: 20px;
-			background-color: black;
-			padding: 5px 40;
-			margin: 0 500px;
-			border: 2px solid #FFD700;
+            background-color: black;
+            padding: 5px 40px;
+            margin: 0 20px;
+            border: 2px solid #FFD700;
             border-radius: 25px;
         }
 
         .hero p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 30px;
-			border: 2px solid #FFD700;
+            border: 2px solid #FFD700;
             border-radius: 15px;
-			background-color: black;
-			margin: 0 200px
-			
+            background-color: black;
+            margin: 0 20px;
         }
 
         .cta-button {
             background-color: #FFD700;
             color: #000;
-            padding: 15px 40px;
+            padding: 10px 20px;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em;
             border-radius: 5px;
             font-weight: bold;
         }
 
         .cta-button:hover {
-            background-color:#000;
+            background-color: #000;
             color: #FFD700;
         }
 
         .section {
-            padding: 50px 20px;
+            padding: 30px 10px;
             text-align: center;
         }
 
         .section h3 {
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 20px;
         }
 
         .grid {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
             flex-wrap: wrap;
         }
 
         .grid-item {
             background-color: #333;
-            padding: 0px;
+            padding: 10px;
             border-radius: 10px;
-            flex: -1.5;
-            max-width: 300px;
+            flex: 1;
+            max-width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	    color: white;
-	    text-decoration: none;
+            color: white;
+            text-decoration: none;
         }
-		
-		 
 
         .grid-item h4 {
-            font-size: 1.7em;
+            font-size: 1.5em;
             color: #FFD700;
             margin-bottom: 10px;
-	    text-decoration: underline;
-	    text-decoration-color: #333;
+            text-decoration: underline;
+            text-decoration-color: #333;
         }
-		
-		.grid-item h4:hover {
-            color: white;  
+
+        .grid-item h4:hover {
+            color: white;
         }
 
         footer {
-            background-color: #000; /* Fond noir pour le pied de page */
+            background-color: #000;
             color: #fff;
             text-align: center;
             padding: 15px;
             position: fixed;
-	    bottom: 0;
-	    width: 100%;
+            bottom: 0;
+            width: 100%;
         }
 
         footer p {
@@ -149,6 +147,82 @@
             margin: 0;
         }
 
+        /* Media Queries pour responsivité */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 1.5em;
+                padding: 5px 20px;
+                margin: 0 20px;
+            }
+
+            .hero p {
+                font-size: 1em;
+                margin: 0 20px;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .section h3 {
+                font-size: 1.5em;
+            }
+
+            .grid-item h4 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                font-size: 0.8em;
+                margin: 5px 0;
+            }
+
+            .hero h2 {
+                font-size: 1.2em;
+                padding: 5px 10px;
+                margin: 0 10px;
+            }
+
+            .hero p {
+                font-size: 0.8em;
+                margin: 0 10px;
+            }
+
+            .cta-button {
+                padding: 8px 15px;
+                font-size: 0.8em;
+            }
+
+            .section h3 {
+                font-size: 1.2em;
+            }
+
+            .grid-item h4 {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 
@@ -168,31 +242,39 @@
     </nav>
 
     <section class="hero">
-	<br/><br/>
+        <br /><br />
         <h2>Vivez l'ultime expérience gaming</h2>
-		<br/><br/><br/>
+        <br /><br /><br />
         <p>Plongez dans l'univers du gaming avec Gaming&Co. Découvrez les jeux les plus récents, des événements exclusifs et plus encore.</p>
-        <br/><br/><br/><br/><br/>
-		 
+        <br /><br /><br /><br /><br />
+
     </section>
 
     <section class="section">
-	 <a href="https://www.youtube.com/channel/UCPQAHDQGTqoZVP7gQH7MI2Q" class="cta-button">Commencez à nous suivre</a>
+        <a href="https://www.youtube.com/channel/UCPQAHDQGTqoZVP7gQH7MI2Q" class="cta-button">Commencez à nous suivre</a>
         <h3>Nos catégories</h3>
-        <div class="grid">	
+        <div class="grid">
             <div class="grid-item">
-                <a href="défi.html"><h4>Défis</h4></a>
-                <strong><p>Découvrez les futures objectifs de notre chaîne.</p></strong>
+                <a href="défi.html">
+                    <h4>Défis</h4>
+                </a>
+                <strong>
+                    <p>Découvrez les futures objectifs de notre chaîne.</p>
+                </strong>
             </div>
-			
+
             <div class="grid-item">
-			<a href="clips.html"><h4>Clips</h4></a>
-                <p><strong>Le meilleur des clips de la semaine aparait ici.</strong></p>
+                <a href="clips.html">
+                    <h4>Clips</h4>
+                </a>
+                <p><strong>Le meilleur des clips de la semaine apparait ici.</strong></p>
             </div>
-			
-			<div class="grid-item">
-             <a href="tarifs.html"><h4>Coaching</h4></a>
-                <p><strong>Faites vous coacher pas Atomm France, dans un programme personnalisé basé sur Fortnite</strong></p>
+
+            <div class="grid-item">
+                <a href="tarifs.html">
+                    <h4>Coaching</h4>
+                </a>
+                <p><strong>Faites vous coacher par Atomm France, dans un programme personnalisé basé sur Fortnite</strong></p>
             </div>
         </div>
     </section>
